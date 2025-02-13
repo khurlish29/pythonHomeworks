@@ -16,7 +16,8 @@ print(f"{km} km is {m} meters and {cm} centimeters.")
 #task_4
 a = int(input("Enter first num:" ))
 b = int(input("Enter second num:" ))
-print("Integer division: " + str(a//b))
+if (b!=0):
+    print("Integer division: " + str(a//b))
 print("Remainder: " + str(a%b))
 
 #task_5

@@ -5,7 +5,7 @@ age = 2025-birtYear
 print(f"{name}, you are {age} years old!")
 
 #task_2
-txt = "LMaacleitbtui"
+txt = "LMaasleitbtui"
 print("Car names: ", txt[1::2], txt[0::2])
 
 #task_3
@@ -24,13 +24,8 @@ else:
 #task_5
 str = input("Enter a string:").lower()
 vowels = "aeiou"
-v=0
-c=0
-for i in str:
-    if (i in vowels):
-        v+=1
-    else:
-        c+=1
+v=sum(str.count(v) for v in vowels)
+c=len(str)-v
 print(f"Number of vowels is {v}, and consonants is {c}")
 
 #task_6
