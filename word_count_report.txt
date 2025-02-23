@@ -1,0 +1,7 @@
+Word Count Report
+Total Words: 4
+Top Words:
+python - 1
+u - 1
+cusersasus - 1
+x515desktoppythonhomeworkslesson6homeworkwordfrequencycounterpy - 1

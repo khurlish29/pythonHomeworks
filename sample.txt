@@ -1,0 +1,1 @@
+python -u "c:\Users\ASUS X515\Desktop\pythonHomeworks\lesson-6\homework\word_frequency_counter.py"
