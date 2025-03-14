@@ -1,38 +1,39 @@
 class Animal:
-    def __init__(self,species,sound):
-        self.species=species
-        self.sound=sound
+    def __init__(self, species, sound, food):
+        self.species = species
+        self.sound = sound
+        self.food = food
 
-    def makeSound(self):
-        print(f"{self.species} says {self.sound}")
+    def make_sound(self):
+        print(f"{self.species} says {self.sound}.")
 
-    def eat(self,food):
-        print(f"{self.species} is eating {food}")
+    def eat(self):
+        print(f"{self.species} is eating {self.food}.")
 
     def sleep(self):
-        print(f"{self.species} is sleeping")
+        print(f"{self.species} is sleeping.")
 
 class Cow(Animal):
     def __init__(self):
-        super().__init__("Cow","Moo")
-    def produceMilk(self):
-        print(f"{self.species} produces milk")
+        super().__init__("Cow", "Moo", "grass")
 
-class Rooster(Animal):
+    def produce_milk(self):
+        print("The cow is producing milk.")
+
+class Chicken(Animal):
     def __init__(self):
-        super().__init__("Rooster","Cock-a-doodle-do")
-    def alarm(self):
-        print(f"{self.species} wakes farmers up in the morning")
-class Hen(Animal):
+        super().__init__("Chicken", "Cluck", "corn")
+
+    def lay_egg(self):
+        print("The chicken laid an egg.")
+
+class Horse(Animal):
     def __init__(self):
-        super().__init__("Hen","Cluck")
-    def eggs(self):
-        print(f"{self.species} lays eggs")
+        super().__init__("Horse", "Neigh", "hay")
 
+    def run(self):
+        print("The horse is running fast.")
 
-class Donkey(Animal):
-    def __init__(self):
-        super().__init__("Donkey","Hee-Haw")
-    def helper(self):
-        print(f"{self.species} helps to carry heavy loads")
-
+cow = Cow()
+chicken = Chicken()
+horse = Horse()
